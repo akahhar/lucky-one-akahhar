@@ -1,0 +1,122 @@
+[
+    {
+        "id": "A002RL8IYK",
+        "name": "New Balance Fresh",
+        "price": "18",
+        "wholePrice": "18",
+        "priceFraction": "36",
+        "stock": 36,
+        "star": 3,
+        "img": "http://demo.posthemes.com/pos_safira/32-home_default/new-balance-fresh-foam-lazr-v1-sport.jpg",
+        "shipping": 7,
+        "quantity" : 0
+    },
+    {
+        "id": "B01LZ2WZGH",
+        "name": "Juicy Couture Juicy",
+        "price": "30",
+        "wholePrice": "30",
+        "priceFraction": "36",
+        "stock": 20,
+        "star": 5,
+        "img": "http://demo.posthemes.com/pos_safira/70-home_default/juicy-couture-juicy-quilted-terry-track-jacket.jpg",
+        "shipping": 7,
+        "quantity" : 0
+    },
+    {
+        "id": "C01K1IO3QW",
+        "name": "Trans-Weight Hooded",
+        "price": "11",
+        "wholePrice": "11",
+        "priceFraction": "26",
+        "stock": 15,
+        "star": 2,
+        "img": "http://demo.posthemes.com/pos_safira/49-home_default/trans-weight-hooded-wind-and-water-resistant-shell.jpg",
+        "shipping": 7,
+        "quantity" : 0
+    },
+    {
+        "id": "DE1LD4MGY4",
+        "name": "New Balance Fresh Foam Kaymin",
+        "price": "17",
+        "wholePrice": "17",
+        "priceFraction": "28",
+        "stock": 4,
+        "star": 5,
+        "img": "http://demo.posthemes.com/pos_safira/42-home_default/new-balance-fresh-foam-kaymin.jpg",
+        "shipping": 7,
+        "quantity" : 0
+    },
+    {
+        "id": "F01DBGVB7K",
+        "name": "Originals Kaval",
+        "price": "19",
+        "wholePrice": "19",
+        "priceFraction": "20",
+        "stock": 10,
+        "star": 4,
+        "img": "http://demo.posthemes.com/pos_safira/73-home_default/originals-kaval-windbreaker-winter-jacket.jpg",
+        "shipping": 7,
+        "quantity" : 0
+    },
+    {
+        "id": "G015WXL0C6",
+        "name": "Juicy Couture Tricot",
+        "price": "9",
+        "wholePrice": "9",
+        "priceFraction": "24",
+        "stock": 6,
+        "star": 5,
+        "img": "http://demo.posthemes.com/pos_safira/28-home_default/juicy-couture-tricot-logo-stripe-jacket.jpg",
+        "shipping": 7,
+        "quantity" : 0
+    },
+    {
+        "id": "H06Y4GZS9C",
+        "name": "Juicy Couture Solid",
+        "price": "18",
+        "wholePrice": "18",
+        "priceFraction": "26",
+        "stock": 4,
+        "star": 5,
+        "img": "http://demo.posthemes.com/pos_safira/40-home_default/brown-bear-cushion.jpg",
+        "shipping": 7,
+        "quantity" : 0
+    },
+    {
+        "id": "I06XJJG4PD",
+        "name": "Madden by Steve",
+        "price": "11",
+        "wholePrice": "11",
+        "priceFraction": "22",
+        "stock": 12,
+        "star": 3,
+        "img": "http://demo.posthemes.com/pos_safira/53-home_default/madden-by-steve-madden-cale-6.jpg",
+        "shipping": 7,
+        "quantity" : 0
+    },
+    {
+        "id": "J01NBE6Y5D",
+        "name": "Fila Locker",
+        "price": "9",
+        "wholePrice": "9",
+        "priceFraction": "18",
+        "stock": 15,
+        "star": 5,
+        "img": "http://demo.posthemes.com/pos_safira/24-home_default/brown-bear-vector-graphics.jpg",
+        "shipping": 7,
+        "quantity" : 0
+    },
+    {
+        "id": "K01J42JPJG",
+        "name": "Brixton Patrol",
+        "price": "29",
+        "wholePrice": "29",
+        "priceFraction": "36",
+        "stock": 20,
+        "star": 5,
+        "img": "http://demo.posthemes.com/pos_safira/65-home_default/brixton-patrol-all-terrain-anorak-jacket.jpg",
+        "shipping": 7,
+        "quantity" : 0
+    }
+]
