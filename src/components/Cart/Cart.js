@@ -6,7 +6,7 @@ import "./Cart.css";
 const Cart = ({ cart, onClickRandom, onClickDelete, onClickReset }) => {
   //   console.log(cart.name);
   return (
-    <div className="cart p-3">
+    <div className="cart p-3 mb-5">
       <h4 className="mb-3">Selected Items</h4>
       <div>
         {cart &&

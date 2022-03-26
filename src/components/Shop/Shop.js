@@ -14,9 +14,13 @@ const Shop = () => {
 
   const onClickHandler = (product) => {
     const isItemInCart = cart.find((item) => item.id === product.id);
-    if (isItemInCart === undefined) {
+    if (!isItemInCart) {
       const newCart = [...cart, product];
-      setCart(newCart);
+      if (newCart.length < 5) {
+        setCart(newCart);
+      } else {
+        alert("Can't Select more than 4!");
+      }
     } else {
       alert(product.name + " already exist into your cart");
     }
