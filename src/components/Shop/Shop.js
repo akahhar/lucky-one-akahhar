@@ -14,21 +14,18 @@ const Shop = () => {
 
   const onClickHandler = (product) => {
     const isItemInCart = cart.find((item) => item.id === product.id);
-    if (!isItemInCart) {
-      const newCart = [...cart, { ...product }];
+    if (isItemInCart === undefined) {
+      const newCart = [...cart, product];
       setCart(newCart);
     } else {
       alert(product.name + " already exist into your cart");
     }
   };
-  console.log(cart);
   const onClickRandom = (acCart) => {
     if (acCart.length) {
       let randomIndex = Math.floor(Math.random() * acCart.length);
       const newItem = acCart[randomIndex];
-
       setCart([newItem]);
-      //   alert(newItem.name + " Your Random Item");
     } else {
       alert("Please some items add to cart");
     }
