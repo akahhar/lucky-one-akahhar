@@ -5,7 +5,7 @@ import "./Product.css";
 const Product = ({ product, onClickHandler }) => {
   const { img, name, price } = product;
   return (
-    <div className="col-xl-4">
+    <div className="col-xl-4 col-lg-6 col-md-6">
       <div className="single-product mb-4">
         <img src={img} alt="" />
         <div className="product_desc text-center p-3">
