@@ -5,6 +5,7 @@ import Product from "../Product/Product";
 const Shop = () => {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState([]);
+  const [ranDomProduct, setRanDomProduct] = useState({});
 
   useEffect(() => {
     fetch("./products.JSON")
@@ -13,9 +14,31 @@ const Shop = () => {
   }, []);
 
   const onClickHandler = (product) => {
-    const newCart = [...cart, product];
+    const isItemInCart = cart.find((item) => item.id === product.id);
+    if (!isItemInCart) {
+      const newCart = [...cart, { ...product }];
+      setCart(newCart);
+    } else {
+      alert(product.name + " already exist into your cart");
+    }
+  };
+
+  const onClickRandom = (acCart) => {
+    let randomIndex = Math.floor(Math.random() * acCart.length);
+    const newItem = acCart[randomIndex];
+    setRanDomProduct(newItem);
+  };
+
+  const onClickDelete = (id) => {
+    const newCart = cart.filter((item) => item.id !== id);
     setCart(newCart);
   };
+
+  const onClickReset = () => {
+    setCart([]);
+  };
+
+  console.log(ranDomProduct);
 
   return (
     <div className="shop">
@@ -34,7 +57,13 @@ const Shop = () => {
             </div>
           </div>
           <div className="col-xl-4 px-4">
-            <Cart cart={cart} />
+            <Cart
+              cart={cart}
+              onClickRandom={onClickRandom}
+              onClickDelete={onClickDelete}
+              onClickReset={onClickReset}
+              ranDomProduct={ranDomProduct}
+            />
           </div>
         </div>
       </div>
