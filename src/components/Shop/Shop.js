@@ -5,7 +5,6 @@ import Product from "../Product/Product";
 const Shop = () => {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState([]);
-  const [ranDomProduct, setRanDomProduct] = useState({});
 
   useEffect(() => {
     fetch("./products.JSON")
@@ -22,11 +21,17 @@ const Shop = () => {
       alert(product.name + " already exist into your cart");
     }
   };
-
+  console.log(cart);
   const onClickRandom = (acCart) => {
-    let randomIndex = Math.floor(Math.random() * acCart.length);
-    const newItem = acCart[randomIndex];
-    setRanDomProduct(newItem);
+    if (acCart.length) {
+      let randomIndex = Math.floor(Math.random() * acCart.length);
+      const newItem = acCart[randomIndex];
+
+      setCart([newItem]);
+      //   alert(newItem.name + " Your Random Item");
+    } else {
+      alert("Please some items add to cart");
+    }
   };
 
   const onClickDelete = (id) => {
@@ -37,8 +42,6 @@ const Shop = () => {
   const onClickReset = () => {
     setCart([]);
   };
-
-  console.log(ranDomProduct);
 
   return (
     <div className="shop">
@@ -62,7 +65,6 @@ const Shop = () => {
               onClickRandom={onClickRandom}
               onClickDelete={onClickDelete}
               onClickReset={onClickReset}
-              ranDomProduct={ranDomProduct}
             />
           </div>
         </div>

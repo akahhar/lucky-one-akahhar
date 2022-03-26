@@ -1,13 +1,13 @@
 import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import "./Product.css";
 const Product = ({ product, onClickHandler }) => {
-  console.log(product);
   const { img, name, price } = product;
   return (
     <div className="col-xl-4">
       <div className="single-product mb-4">
-        <img src={img} className="img-fluid" alt="" />
+        <img src={img} alt="" />
         <div className="product_desc text-center p-3">
           <h6>{name}</h6>
           <h5>Price ${price}</h5>

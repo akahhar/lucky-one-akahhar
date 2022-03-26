@@ -27,7 +27,7 @@ const Cart = ({ cart, onClickRandom, onClickDelete, onClickReset }) => {
             </div>
           ))}
       </div>
-      <button className="btn mb-2" onClick={() => onClickRandom(cart)}>
+      <button className="btn mb-2 me-2" onClick={() => onClickRandom(cart)}>
         CHOOSE 1 FOR ME
       </button>
       <button className="btn mb-2" onClick={() => onClickReset()}>
